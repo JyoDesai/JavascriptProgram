@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Animals</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script> -->
+</head>
+<body>
+    <h1>The total number of legs of all the animals</h1>
+    <p id="demo1"></p>
+</body>
+</html>
+<script>
+
+let chickens = 2 ;
+let cows = 4 ;
+let pigs = 4 ;
+
+function animals(chickens1,cows1,pigs1){
+  this.chickens1 = chickens1;
+  this.cows1 = cows1;
+  this.pigs1 = pigs1;
+  this.totalAnimalLegs = () => {
+    return (chickens * chickens1) + (cows1 * cows) + (pigs1 * pigs);
+  };
+  
+}
+var animalsBreed = new animals(2, 4, 4);
+console.log(animalsBreed)
+document.getElementById("demo1").innerHTML =
+"Total Number of Legs of all animals " + animalsBreed.totalAnimalLegs(); 
+
+</script>

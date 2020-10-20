@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Area Of Traingle</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+    <h2>JavaScript Object Constructors</h2>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+</body>
+</html>
+<script>
+// Constructor function for Traingle 1
+function Traingle(base, height) {
+  this.base = base;
+  this.height = height;
+  this.area = function() {
+    return (this.base  * this.height / 2);
+  };
+  
+}
+// Create new Traingle object
+var AreaOfTraingle = new Traingle(5, 4);
+console.log(AreaOfTraingle)
+document.getElementById("demo").innerHTML =
+"Area of Traingle " + AreaOfTraingle.area(); 
+
+
+
+// Constructor function for Traingle 2
+/*let base1 = prompt('Enter the base of a triangle: ');
+let height1 = prompt('Enter the height of a triangle: ');
+let areaValue = (base1 * height1) / 2;
+console.log(
+  'The area of the triangle is ',areaValue)
+document.getElementById("demo1").innerHTML =
+"Area of Traingle " + areaValue; */
+
+</script>
